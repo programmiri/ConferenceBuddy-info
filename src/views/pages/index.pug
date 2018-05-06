@@ -44,12 +44,12 @@ block content
       p Hi, I am #[a(class="textlink" href="http://www.programmiri.de") Mirjam] and I am creating #[strong Conference Buddy] for you and me.
       p The idea was born for a simple reason: While I #[strong love] going to meetups, barcamps and conferences, I don't like going on my own when I don't know anyone. Even the thought is #[strong intimidating]. And I can't be the only one, right?
       p Feel free to just drop me a message if you have any feedback about Conference Buddy!
-      .py-2.d-flex.justify-content-center
-        .d-flex
+      .row.py-2.d-flex.justify-content-center
+        .col-xs-6.d-flex.pr-sm-2.pb-3.pb-sm-0
             +icon_fa('fab fa-twitter')
             .pl-2
               a(class="textlink" href="https://twitter.com/confBuddy") @ConfBuddy
-        .pl-4.d-flex
+        .col-xs-6.d-flex.pl-sm-2
           +icon_fa('fas fa-envelope')
           .pl-2
             a(class="textlink" href="mailto:mirjam@conferencebuddy.io") mirjam@conferencebuddy.io
