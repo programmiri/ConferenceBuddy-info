@@ -1,0 +1,23 @@
+//custom variables
+@import "./variables";
+
+//bootstrap styles
+@import "./bootstrap/config";
+@import "./bootstrap_ext/buttons";
+
+
+//custom styles
+@import "./basics/font";
+@import "./basics/link";
+
+@import "./utilities/backgrounds";
+
+@import "./components/a_subscribe-button";
+@import "./components/a_icon-fa";
+@import "./components/o_content-section";
+@import "./components/o_header";
+
+
+strong {
+  font-weight: bold;
+}

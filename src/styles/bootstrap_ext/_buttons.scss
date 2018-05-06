@@ -1,0 +1,9 @@
+.btn {
+  &.btn-custom {
+    font-size: $font-size-sm;
+    border-radius: $btn-border-radius;
+    padding: 0.75rem 2.5rem;
+    text-transform: uppercase;
+  }
+
+}

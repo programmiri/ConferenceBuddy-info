@@ -1,0 +1,13 @@
+.content-section {
+  padding: 5rem 0;
+
+  @include media-breakpoint-up(md) {
+    min-height: 100vh;
+  }
+
+  .content-section-about-img-wrapper {
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+  }
+}

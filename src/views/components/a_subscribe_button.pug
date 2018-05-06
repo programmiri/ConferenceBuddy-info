@@ -1,0 +1,10 @@
+mixin subscribe_button(text)
+  form#mc-embedded-subscribe-form.validate(action='https://twitter.us18.list-manage.com/subscribe/post?u=54beafb39ac5189cc9994247b&amp;id=f95152f72e', method='post', name='mc-embedded-subscribe-form', target='_blank')
+    .subscribe-button.m-auto
+      .input-group
+        input#mce-EMAIL.shadow-sm.subscribe-button-input.text-primary.form-control(type='email', name='EMAIL' placeholder='Email adresse' title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required="")
+        div(style='position: absolute; left: -5000px;', aria-hidden='true')
+          input(type='text', name='b_f2d244c0df42a0431bd08ddea_aeaa9dd034', tabindex='-1', value='')
+        .input-group-append
+          input#mc-embedded-subscribe.shadow-sm.btn.btn-secondary.subscribe-button-btn(type='submit', value='Subscribe', name='subscribe')
+

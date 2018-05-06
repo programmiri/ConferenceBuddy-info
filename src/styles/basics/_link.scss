@@ -1,0 +1,21 @@
+a.textlink {
+  color: $primary;
+  border-bottom: 2px solid $secondary;
+  background: linear-gradient($primary, $secondary  100%) bottom no-repeat;
+  background-size: 100% 0;
+  transition: background-size .1s;
+
+  &:hover {
+    background-size: 100% 100%;
+    text-decoration: none;
+    color: $light;
+  }
+
+  &:not([href]) {
+    color: $primary;
+    &:hover {
+      cursor: pointer;
+      color: $light;
+    }
+  }
+}

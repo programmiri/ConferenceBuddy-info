@@ -1,0 +1,61 @@
+extends ../templates/pages
+
+include ../components/a_subscribe_button
+include ../components/a_fixed_size_wrapper
+include ../components/a_icon_fa
+
+block content
+  header.header.header-fullscreen-bg
+    .container.header-textarea.d-flex.align-items-center
+      .text-center.text-light
+        .d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
+          h1.display-2
+            strong Conference Buddy
+        .d-block.d-sm-none
+          h1
+            strong Conference Buddy
+        .header-introtext.lead.pb-3
+          p Conference Buddy is for #[strong everyone] who wants to attend a tech conference but is afraid to go alone. It’s for #[strong all you] first-timers, introverts, socially awkwards, timid and shy people out there who are just like me!
+        a.btn.btn-md.btn-primary.btn-custom.shadow-sm(href="#learn-more" data-anchorlink) Learn more
+  section#learn-more.content-section.bg-gradient.text-light
+    .container
+      .d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
+        h2.display-4 What is #[strong Conference Buddy]?
+      .d-block.d-sm-none
+        h2 What is Conference Buddy?
+      p Conference Buddy wants to provide a place to find #[strong companions for tech conferences]. You can look for one or more person with whom you can attend a conference #[strong together]. Support each other, find a familiar face between all these strangers. You will feel more at ease and comfortable just knowing you’re not alone. At the same time you’ll #[strong help others] to feel better!
+
+      h3 Show your interest by joining the mailing list!
+      p You can sign up to my mailinglist so I can let you know once it's ready.
+        strong No spam
+        | , I promise.
+      .pt-5
+        +subscribe_button()
+  section.content-section.text-center
+    .container
+      .d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
+        h3.display-4 About
+          h4.text-muted Who, why, what?
+      .d-block.d-sm-none
+        h3.h2 About
+        h4.h5.text-muted Who, why, what???
+      .content-section-about-img-wrapper.px-5.my-3
+        img.rounded-circle.img-fluid(src="/static/img/mirjambaeuerlein.jpg", alt="Profilpic Mirjam Bäuerlein")
+      p Hi, I am #[a(class="textlink" href="http://www.programmiri.de") Mirjam] and I am creating #[strong Conference Buddy] for you and me.
+      p The idea was born for a simple reason: While I #[strong love] going to meetups, barcamps and conferences, I don't like going on my own when I don't know anyone. Even the thought is #[strong intimidating]. And I can't be the only one, right?
+      p Feel free to just drop me a message if you have any feedback about Conference Buddy!
+      .py-2.d-flex.justify-content-center
+        .d-flex
+            +icon_fa('fab fa-twitter')
+            .pl-2
+              a(class="textlink" href="https://twitter.com/confBuddy") @ConfBuddy
+        .pl-4.d-flex
+          +icon_fa('fas fa-envelope')
+          .pl-2
+            a(class="textlink" mailto="mirjam@conferencebuddy.io") mirjam@conferencebuddy.io
+
+
+block footer
+  .container-fluid.bg-gradient.py-2
+    .text-center.text-light.small
+      | Made with #[i(class="fas fa-heart")], lots of #[i(class="fas fa-coffee")] and an awesome #[i(class="fas fa-keyboard")]

@@ -1,0 +1,20 @@
+.header {
+  &.header-fullscreen-bg {
+    height: 100vh;
+    background:
+      linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url(/static/img/background.jpg)
+      center center / cover
+      no-repeat
+      fixed
+  }
+
+  .header-textarea {
+    height: 100%;
+  }
+
+  .header-introtext {
+    width: 75%;
+    margin: auto;
+  }
+
+}
