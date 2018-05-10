@@ -29,12 +29,11 @@ block content
       p Conference Buddy wants to provide a place to find #[strong companions for tech conferences]. You can look for one or more person with whom you can attend a conference #[strong together]. Support each other, find a familiar face between all these strangers. You will feel more at ease and comfortable just knowing you’re not alone. At the same time you’ll #[strong help others] to feel better!
 
       h3 Show your interest by joining the mailing list!
-      p You can sign up to my mailinglist so I can let you know once it's ready.
-        strong No spam
-        | , I promise.
+      p You can sign up to my mailinglist so I can let you know once it's ready. #[strong No spam], I promise. Please see my #[a(href='https://www.iubenda.com/privacy-policy/44138766', title='Privacy Policy' class="textlink-light") Privacy Policy].
       .pt-5
         +subscribe_button()
-  section.content-section.text-center
+        span.text-center.mt-1.bg-light
+  section.content-section.text-center.pb-5
     .container
       .d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
         h3.display-4 About
@@ -47,7 +46,7 @@ block content
       p Hi, I am #[a(class="textlink" href="http://www.programmiri.de") Mirjam] and I am creating #[strong Conference Buddy] for you and me.
       p The idea was born for a simple reason: While I #[strong love] going to meetups, barcamps and conferences, I don't like going on my own when I don't know anyone. Even the thought is #[strong intimidating]. And I can't be the only one, right?
       p Feel free to just drop me a message if you have any feedback about Conference Buddy!
-      .row.py-2.d-flex.justify-content-center
+      .row.py-2.d-flex.justify-content-center.mb-4
         .col-xs-6.d-flex.pr-2.pb-3.pb-sm-0
             +icon_fa('fab fa-twitter')
             .pl-2
@@ -56,9 +55,14 @@ block content
           +icon_fa('fas fa-envelope')
           .pl-2
             a(class="textlink" href="mailto:mirjam@conferencebuddy.io") mirjam@conferencebuddy.io
-
+      hr
+      .small.d-flex.justify-content-center
+        +icon_fa('fas fa-user-secret')
+        .pl-2
+          a(href='https://www.iubenda.com/privacy-policy/44138766', title='Privacy Policy' class="textlink") Privacy Policy
 
 block footer
   .container-fluid.bg-gradient.py-2
     .text-center.text-light.small
       | Made with #[i(class="fas fa-heart")], lots of #[i(class="fas fa-coffee")] and an awesome #[i(class="fas fa-keyboard")]
+
