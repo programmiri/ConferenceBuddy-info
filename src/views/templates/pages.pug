@@ -4,9 +4,14 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     title Conference Buddy
-    meta(name='title', content='Conference Buddy - Find companions for visiting tech conferences')
+    meta(name='title', content='Conference Buddy')
     meta(name='description', content='Conference Buddy will support everyone who wants to attend a tech conference but is afraid to go alone. It will provide a place to find companions for tech conferences.')
     meta(name="keywords" content="Tech Conference, Software Conference, Programming Conference, Coding Conference")
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@confBuddy')
+    meta(name='twitter:title', content='Conference Buddy')
+    meta(name='twitter:description', content='Conference Buddy will support everyone who wants to attend a tech conference but is afraid to go alone. It will provide a place to find companions for tech conferences.')
+    meta(name='twitter:image', content='img/conferencebuddy-twitter.jpg')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='manifest', href='site.webmanifest')
     link(rel='apple-touch-icon', href='icon.png')
@@ -17,19 +22,3 @@ html(lang='en')
     block content
     footer
       block footer
-    script(type='text/javascript').
-      (function(w, d) {
-      var loader = function() {
-      var s = d.createElement("script"),
-      tag = d.getElementsByTagName("script")[0];
-      s.src = "https://cdn.iubenda.com/iubenda.js";
-      tag.parentNode.insertBefore(s, tag);
-      };
-      if (w.addEventListener) {
-      w.addEventListener("load", loader, false);
-      } else if (w.attachEvent) {
-      w.attachEvent("onload", loader);
-      } else {
-      w.onload = loader;
-      }
-      })(window, document);
