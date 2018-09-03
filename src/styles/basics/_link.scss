@@ -1,9 +1,9 @@
 a.textlink {
   color: $primary;
   border-bottom: 2px solid $secondary;
-  background: linear-gradient($primary, $secondary  100%) bottom no-repeat;
+  background: linear-gradient($primary, $secondary  60%) bottom no-repeat;
   background-size: 100% 0;
-  transition: background-size .1s;
+  transition: background-size .2s;
 
   &:hover {
     background-size: 100% 100%;
@@ -15,7 +15,7 @@ a.textlink {
 a.textlink-light {
   color: $light;
   border-bottom: 2px solid $secondary;
-  background: linear-gradient($primary, $secondary  100%) bottom no-repeat;
+  background: linear-gradient($primary, $secondary  60%) bottom no-repeat;
   background-size: 100% 0;
   transition: background-size .1s;
 

@@ -3,14 +3,14 @@
     min-height: 100vh;
     @include media-breakpoint-down(sm) {
       background:
-        linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url(/static/img/background-mobile.jpg)
+        linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url(/static/img/background-new-mobile.jpg)
         center center / cover
         no-repeat
         scroll
     }
     @include media-breakpoint-up(md) {
       background:
-        linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url(/static/img/background.jpg)
+        linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url(/static/img/background-new.jpg)
         center center / cover
         no-repeat
         fixed
@@ -19,7 +19,7 @@
 
   .header-textarea {
     min-height: 80%;
-    padding-top: 10%;
+    padding-top: 2%;
     padding-bottom: 10%;
   }
 

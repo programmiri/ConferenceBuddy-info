@@ -7,17 +7,10 @@ include ../components/a_icon_fa
 block content
   header.header.header-fullscreen-bg
     .container.header-textarea.d-flex.align-items-center
-      .text-center.text-light
-        .d-none.d-md-block.d-lg-block.d-xl-block
-          h1.display-2
-            strong Conference Buddy
-        .d-none.d-sm-block.d-md-none.d-lg-none.d-xl-none
-          h1.display-3
-            strong Conference Buddy
-        .d-block.d-sm-none
-          h1
-            strong Conference Buddy
-        .header-introtext.lead.pb-3
+      .text-center.text-light.pt-5
+        h1.d-none Conference Buddy
+        img.img-fluid(src="/static/img/confbuddy_logo.png", alt="Logo")
+        .header-introtext.lead.pb-3.pt-2
           p Conference Buddy is for #[strong everyone] who wants to attend a tech conference but is afraid to go alone. It’s for #[strong all you] first-timers, introverts, socially awkwards, timid and shy people out there who are just like me!
         a.btn.btn-md.btn-primary.btn-custom.shadow-sm(href="#learn-more" data-anchorlink) Learn more
   section#learn-more.content-section.bg-gradient.text-light
@@ -48,7 +41,7 @@ block content
       p Feel free to just drop me a message if you have any feedback about Conference Buddy!
       .row.py-2.d-flex.justify-content-center.mb-4
         .col-xs-6.d-flex.pr-2.pb-3.pb-sm-0
-            +icon_fa('fab fa-twitter')
+            +icon_fa('fab fa-twitter ')
             .pl-2
               a(class="textlink" href="https://twitter.com/confBuddy") @ConfBuddy
         .col-xs-6.d-flex.pl-2
@@ -64,5 +57,5 @@ block content
 block footer
   .container-fluid.bg-gradient.py-2
     .text-center.text-light.small
-      | Made with #[i(class="fas fa-heart")], lots of #[i(class="fas fa-coffee")] and an awesome #[i(class="fas fa-keyboard")]
+      | Made with #[i(class="fas fa-heart text-secondary")], lots of #[i(class="fas fa-coffee text-secondary")] and an awesome #[i(class="fas fa-keyboard text-primary")]
 

@@ -1,3 +1,3 @@
 .bg-gradient {
-  background: linear-gradient(45deg, $primary, $secondary);
+  background: linear-gradient(45deg, $primary 35%, $secondary 75%, $secondary 100%);
 }

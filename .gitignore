@@ -37,3 +37,7 @@ node_modules/
 
 #distfolder
 dist/
+
+
+.DS_Store
+
